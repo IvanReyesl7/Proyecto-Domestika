@@ -1,5 +1,13 @@
 :root{
-    
+    --primario: #d03b40;
+    --secundario: #ded6c0;
+    --blanco: #f5f0ed;
+    --gris: #241d1b;
+
+    --texto_claro: #f5f0ed;
+    --texto_oscuro: #3c3c3b; 
+
+    --fuente_principal: "Open Sans", sans-serif;
 }
 
 
@@ -19,4 +27,85 @@ html{
 body{
     font-size: 1.6rem;
     line-height: 1.5;
+    font-family: var(--fuente_principal);
+    
 }
+
+h1{
+    font-size: 4.4rem;
+    
+}
+
+h2{
+    font-size: 2.8rem;
+}
+
+h3{
+    font-size: 2.4rem;
+}
+
+h1, h2, h3{
+    text-transform: uppercase;
+}
+
+/**Navegación**/
+
+
+.navegacion, ul, a, li{
+    text-decoration: none;
+    list-style: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: var(--texto_claro);
+    
+
+}
+
+.img{
+    position: absolute;
+    padding: 2rem 5rem;
+}
+
+.logo{
+    height: 4rem;
+}
+
+.navegacion ul{
+    float: right;
+}
+
+.navegacion, ul, li{
+    display: inline;
+    margin-right: 1.5rem;
+    padding: 2rem 5rem;
+}
+
+/**Servicios**/
+
+.principal{
+    background-image: url(../img/fondo1.jpg);
+    color: var(--texto_claro);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+/**Footer**/
+
+.footer{
+    background-color: var(--gris);
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+.footer__texto{
+    color: var(--texto_claro);
+    margin-left: 1.5rem;
+
+}
+
+
